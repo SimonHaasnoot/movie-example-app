@@ -1,5 +1,9 @@
 # InnSpire Frontend Assessment
 
+## Project is created with Vite; to run:
+- `npm install`
+- `npm run dev`
+
 ## Purpose
 This assessment is designed to showcase your understanding of a frontend framework, together with your level of expertise in JavaScript/TypeScript.
 
@@ -35,18 +39,3 @@ You are free to choose between **Vue, React or Angular** to excecute this assess
 For this assessment we use the IMDB API for retrieving data. You can create a free account to make use of the APIs.
 
 - https://imdb-api.com/
-
-### Notes on completing the assessment
-- There is no right way to do this. We are interested in the choices that you make, how you justify them, and your development process.
-- Make sure that the application is executable.
-
-## The interview
-
-We will spend 60 minutes at yout interview with you. This will include:
-- Getting to know each other.
-- Looking at your current code and solutions.
-
-
-
-
-
