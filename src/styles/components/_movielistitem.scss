@@ -1,0 +1,36 @@
+.ml-item {
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+        transition: transform 0.25s;
+    }
+
+    &__image {
+        border-radius: 12px;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__rating {
+        position: absolute;
+        top: 0;
+        right: 12px;
+        background-color: #1a1a1a;
+        padding: 4px 12px;
+        border-radius: 8px;
+        font-size: 0.8em;
+        font-weight: 500;
+        color: white;
+    }
+}

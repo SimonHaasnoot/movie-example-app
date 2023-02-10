@@ -2,8 +2,17 @@ import { Movie } from '../types/Movie';
 
 export type MovieListItemProps = {
     movie: Movie;
+    toggleDetailedView: () => void;
 };
 
-export const MovieListItem: React.FC<MovieListItemProps> = ({ movie }) => {
-    return <div className="movielist__movie">{movie.title}</div>;
+export const MovieListItem: React.FC<MovieListItemProps> = ({ movie, toggleDetailedView }) => {
+    return (
+        <div className="ml-item" onClick={toggleDetailedView}>
+            <img src={movie.image} alt={movie.title} className="ml-item__image" />
+            <div className="ml-item__info">
+                <h2 className="ml-item__title">{movie.title}</h2>
+                <p className="ml-item__rating">{movie.imDbRating}</p>
+            </div>
+        </div>
+    );
 };

@@ -10,13 +10,12 @@ const App = () => {
             <div className="app__heading">
                 <h1>My movie overview</h1>
                 <p>Your favorite Arnold Schwarzenegger movies by James Cameron.</p>
+                <button onClick={() => setLoadMovies(true)}>Load movies</button>
 
                 <img src={bgImage} alt="Cinema chairs" className="app__background" />
             </div>
 
             <div className="app__content">
-                <button onClick={() => setLoadMovies(true)}>Load movies</button>
-
                 {loadMovies && <MovieList />}
             </div>
         </div>

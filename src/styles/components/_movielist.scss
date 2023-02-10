@@ -1,0 +1,11 @@
+.movielist {
+    max-width: 1280px;
+    margin: auto;
+
+    &__collection {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        gap: 24px;
+    }
+}
