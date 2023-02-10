@@ -1,4 +1,5 @@
 import { Movie } from '../types/Movie';
+import { FaStar } from 'react-icons/fa';
 
 export type MovieListItemProps = {
     movie: Movie;
@@ -12,6 +13,9 @@ export const MovieListItem: React.FC<MovieListItemProps> = ({ movie, toggleDetai
             <div className="ml-item__info">
                 <h2 className="ml-item__title">{movie.title}</h2>
                 <p className="ml-item__rating">{movie.imDbRating}</p>
+            </div>
+            <div className="ml-item__favorite" onClick={(e) => e.preventDefault()}>
+                <FaStar color="black" />
             </div>
         </div>
     );

@@ -4,7 +4,15 @@ import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import App from './App';
 import './styles/main.scss';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            refetchOnWindowFocus: false,
+            refetchOnReconnect: false,
+            retry: false,
+        },
+    },
+});
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
