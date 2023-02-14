@@ -22,6 +22,12 @@ export const MovieDetails: React.FC<MovieDetailProps> = ({ movie }) => {
                 <p>
                     Genres: <br /> {movie.genres}
                 </p>
+                <p>
+                    Content rating: <br /> {movie.contentRating}
+                </p>
+                <p>
+                    Duration: <br /> {movie.runtimeStr}
+                </p>
             </div>
         </div>
     );

@@ -9,4 +9,24 @@
         margin: 40px 0;
         gap: 24px;
     }
+
+    &__categories {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+
+        .active {
+            background: #F2AD1A;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &__filters {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin: 24px 0;
+        cursor: pointer;
+    }
 }

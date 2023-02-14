@@ -6,4 +6,7 @@ export type Movie = {
     image: string;
     imDbRating: string;
     genres: string;
+    contentRating: string;
+    runtimeStr: string;
+
 }
