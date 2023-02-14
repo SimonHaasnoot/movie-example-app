@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useQuery } from 'react-query';
 import { Movie } from '../types/Movie';
 import { MovieQuery } from '../types/MovieQuery';
 import { MovieDetails } from './MovieDetails';
 import { MovieListItem } from './MovieListItem';
-import { JamesCameronMovies } from '../data/cameron-movies';
 
 const API_KEY = 'k_2pcqdv1i';
 const API_URL = 'https://imdb-api.com/API/AdvancedSearch';
